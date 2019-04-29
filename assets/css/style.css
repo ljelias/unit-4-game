@@ -19,7 +19,7 @@ header {
     margin: 4px auto;
     height: 50px;
     padding-top: 10px;
-    width: 60%;
+    width: 65%;
     background-color: mediumorchid;
 }
  
@@ -29,7 +29,7 @@ header {
     margin: 4px auto;
     height: 260px;
     padding: 12px;
-    width: 60%;
+    width: 65%;
     background-color: rgb(207, 231, 231);
 }
 
@@ -55,7 +55,7 @@ header {
     border: 1px solid grey;
     margin: 4px auto;
     height: 110px;
-    width: 60%;
+    width: 65%;
     display: flex;
     justify-content: space-between;
 }
@@ -92,7 +92,7 @@ header {
     margin: 4px auto 40px auto;
     padding: 5px 10px 5px 10px;
     height: 110px;
-    width: 60%;
+    width: 65%;
     background-color: rgb(39, 38, 38);
     display: flex;
     justify-content: space-evenly;
