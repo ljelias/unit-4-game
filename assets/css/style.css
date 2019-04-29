@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: Arial, "Helvetica";
+    background-color: rgb(248, 239, 110);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 10px 0;
+    justify-content: center;
+}
+
+header {
+    border: 2px solid grey;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 4px auto;
+    height: 50px;
+    padding-top: 10px;
+    width: 60%;
+    background-color: mediumorchid;
+}
+ 
+.instructions {
+    border: 2px solid grey;
+    text-align: left;
+    margin: 4px auto;
+    height: 260px;
+    padding: 12px;
+    width: 60%;
+    background-color: rgb(207, 231, 231);
+}
+
+.instructions p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.instructions span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+#results {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.scorebox {
+    border: 1px solid grey;
+    margin: 4px auto;
+    height: 110px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scorebox h4 {
+    font-size: 1.5rem;
+    margin-top: 8px;
+    font-style: italic;
+    text-align: center;
+}
+
+.scorebox h2 {
+    font-size: 2.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#randomside {
+    background-color: limegreen;
+    border: 1px solid grey;
+    width: 50%;
+    z-index: 1;
+}
+
+#totalside {
+    background-color: dodgerblue;
+    border: 1px solid grey;
+    width: 50%;
+    z-index: 1;
+}
+
+.gemdisplay {
+    border: 2px solid grey;
+    margin: 4px auto 40px auto;
+    padding: 5px 10px 5px 10px;
+    height: 110px;
+    width: 60%;
+    background-color: rgb(39, 38, 38);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img {
+    height: 90px;
+    width: 90px;  
+}
+
+

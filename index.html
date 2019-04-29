@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Gem Collector</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>~ ~ ~&nbsp;&nbsp;Gem Collector&nbsp;&nbsp;~ ~ ~</h2>
+        </header>
+        
+        <div class="instructions">
+            <p>At the start of the game, you will see a random number. Try to match that number by clicking on the gems.</p>
+            <p>The gems have hidden values. You will discover the values by clicking on them.</p>
+            <p>Each time you click on a gem, the value of that gem will be added to your total score.</p>
+            <p>You win by matching the random number. If you go above that number, you lose.</p>
+            <p>Each time the game starts, the gems will change their value.</p>
+            <div id="results">   
+                <span id="wins">WINS: <span id="wintotal">0</span></span>
+                <span id="msg"></span>
+                <span id="losses">LOSSES: <span id="losstotal">0</span></span>
+            </div>
+        </div>
+
+        <div class="scorebox">
+            <div id="randomside">
+                <h4>Match this number:</h4>
+                <h2 id="randomnumber">00</h2>
+            </div> 
+            <div id="totalside">
+                <h4>Your total:</h4>
+                <h2 id="totalscore">00</h2>
+            </div> 
+        </div>
+
+        <div class="gemdisplay">
+            <img type="button" class="gem" id="gem1" value="gemNum1" src="assets/images/gempurple.jpg"/>
+            <img type="button" class="gem" id="gem2" value="gemNum2" src="assets/images/gemgreen.jpg"/>
+            <img type="button" class="gem" id="gem3" value="gemNum3" src="assets/images/gemblue.jpg"/>
+            <img type="button" class="gem" id="gem4" value="gemNum4" src="assets/images/gemyellow.jpg"/>
+        </div>
+
+    </div>
+
+
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
