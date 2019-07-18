@@ -7,7 +7,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <title>Gem Collector</title>
@@ -16,25 +15,28 @@
 <body>
     <div class="container">
         <header>
-            <h2>~ ~ ~&nbsp;&nbsp;Gem Collector&nbsp;&nbsp;~ ~ ~</h2>
+            <h2>Gem Collector Game</h2>
         </header>
         
         <div class="instructions">
-            <p>At the start of the game, you will see a random number. Try to match that number by clicking the gems.</p>
-            <p>The gems have hidden values. You will discover the values by clicking on them.</p>
-            <p>Each time you click on a gem, the value of that gem will be added to your total score.</p>
-            <p>You win by matching the random number. If you go above that number, you lose.</p>
-            <p>Each time the game starts, the gems will change their value.</p>
+            <p><em><b>OBJECTIVE:</b></em> Make your total match the random number.</p>
+              <ul>
+                <li>Each gem has a random value.</li>
+                <li>Clicking on a gem adds that gem's value to your total.</li>
+                <li>If you match the random number, you win.</li>
+                <li>If you go above the random number, you lose.</li>
+                <li>After you win or lose, the game restarts, and each gem has a new random value.</li>
+              </ul>
             <div id="results">   
-                <span id="wins">WINS: <span id="wintotal">0</span></span>
-                <span id="msg"></span>
-                <span id="losses">LOSSES: <span id="losstotal">0</span></span>
+                <div id="wins">WINS: <span id="wintotal">0</span></div>
+                <div id="msg"></div>
+                <div id="losses">LOSSES: <span id="losstotal">0</span></div>
             </div>
         </div>
 
         <div class="scorebox">
             <div id="randomside">
-                <h4>Match this number:</h4>
+                <h4>Random number:</h4>
                 <h2 id="randomnumber">00</h2>
             </div> 
             <div id="totalside">

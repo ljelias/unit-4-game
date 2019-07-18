@@ -1,16 +1,21 @@
-# unit-4-game: Crystals Collector
+# Gem Collector Game
 
-### A number game 
-- each gem has a secrect value (between 1 and 12)
-- when you click on a gem, its value gets added to your total
-- click the right combination of gems to make your total match the number chosen by the game
-- the gems get a new random value each round
+### A simple number game 
+- at the start of each game, each gem is assigned its own random value (between 1 and 12)
+- when a player clicks on a gem, its value gets added to the player's total
+- players need to choose the right combination of gems to make their total match the random number chosen by the game
+
+### Notes about the program
+- written with HTML, CSS, and JavaScript
+- mobile responsive
+ 
 
 --------------------------------------------------
 
-## Here is a screen shot:
+## Game screen shot:
 
-![gem collector screenshot](unit4game.jpg)
+![gem collector screenshot](gemcollector.jpg)
 
 
+### Link to play:
 https://ljelias.github.io/unit-4-game/

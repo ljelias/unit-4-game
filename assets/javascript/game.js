@@ -60,7 +60,7 @@ function startGame () {
 function winOrLose () {
   if (total === randomNumber) { 
       wins++;
-      message = "YOU WIN!";
+      message = "YOU WIN!!";
       document.getElementById("wintotal").innerHTML = wins;
       document.getElementById("msg").innerHTML = message;
       startGame ();

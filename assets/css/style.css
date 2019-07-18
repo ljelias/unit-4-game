@@ -1,75 +1,94 @@
 * {
     box-sizing: border-box;
 }
-
+body {
+    padding: 9px;
+}
 .container {
     font-family: Arial, "Helvetica";
     background-color: rgb(248, 239, 110);
-    width: 70%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 0 10px 0;
+    padding: 30px 0 30px 0;
     justify-content: center;
 }
 
 header {
-    border: 2px solid grey;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-align: center;
-    margin: 4px auto;
-    height: 50px;
-    padding-top: 10px;
-    width: 65%;
+    margin: 0 auto;
+    padding-top: 1px;
+    width: 90%;
     background-color: mediumorchid;
+    border: 1px solid grey;
+
+}
+h2 {
+    margin: 5px;
+    font-weight: 600;
 }
  
 .instructions {
-    border: 2px solid grey;
+    border: 1px solid grey;
     text-align: left;
-    margin: 4px auto;
-    height: 260px;
-    padding: 12px;
-    width: 65%;
-    background-color: rgb(207, 231, 231);
+    margin: 0 auto;
+    padding: 3px 12px;
+    width: 90%;
+    background-color: rgb(213, 241, 241);
 }
-
-.instructions p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    margin-bottom: 8px;
+.instructions p,
+.instructions ul {
+    font-size: 1rem;
+    margin-bottom: 3px;
 }
-
-.instructions span {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 12px;
+li {
+    margin-left: -12px;
+    margin-bottom: 6px;
 }
 
 #results {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 6px 9px;
+    margin-top: 12px;
 }
-
-
+#wins,
+#msg,
+#losses {
+    display: inline-block;
+    min-width: 136px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#msg {
+    font-style: italic;
+    font-weight: 600;
+}
 .scorebox {
     border: 1px solid grey;
-    margin: 4px auto;
-    height: 110px;
-    width: 65%;
+    margin: 0 auto;
+    width: 90%;
     display: flex;
     justify-content: space-between;
+    font-size: 0;
 }
 
 .scorebox h4 {
     font-size: 1.5rem;
-    margin-top: 8px;
+    margin: 6px auto;
     font-style: italic;
     text-align: center;
 }
 
 .scorebox h2 {
     font-size: 2.2rem;
-    margin-top: 10px;
+    line-height: 2rem;
+    margin: 9px auto;
     text-align: center;
 }
 
@@ -78,6 +97,7 @@ header {
     border: 1px solid grey;
     width: 50%;
     z-index: 1;
+    padding: 9px 0;
 }
 
 #totalside {
@@ -85,16 +105,17 @@ header {
     border: 1px solid grey;
     width: 50%;
     z-index: 1;
+    padding: 9px 0;
 }
 
 .gemdisplay {
-    border: 2px solid grey;
-    margin: 4px auto 40px auto;
-    padding: 5px 10px 5px 10px;
-    height: 110px;
-    width: 65%;
-    background-color: rgb(39, 38, 38);
+    border: 1px solid grey;
+    margin: 0 auto;
+    padding: 9px 3px;
+    width: 90%;
+    background-color: rgb(38, 38, 38);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -102,6 +123,31 @@ header {
 img {
     height: 90px;
     width: 90px;  
+    margin: 9px 0px;
 }
 
+@media only screen and (min-width: 790px) {
+    .container {
+        width: 65%;
+    }
+    header,
+    .instructions,
+    .scorebox,
+    .gemdisplay {
+        width: 75%;
+    }
+    img {
+        margin: 9px 24px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    img {
+        margin: 9px 39px;
+    }
+}
+@media only screen and (min-width: 980px) {
+    img {
+        margin: 9px;
+    }
+}
 
